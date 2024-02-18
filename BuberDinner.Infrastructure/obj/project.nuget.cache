@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bDKsMArg8pDoE292ApgnnbvKDEY/kIecTn/YOgM4jJLOWcZxPelGQ7wF5Z8/cxcXUUp/YiroIc0Ueqsc5Y153g==",
+  "dgSpecHash": "0rYp+oh1S9132+Qgny0LItrxY2SEi3XnxLoUxFopPdh/ThURKHJPdQZvAcNHz+WNrxqWGSlBGtEt3GpenKZp+g==",
   "success": true,
   "projectFilePath": "D:\\projects\\learn\\Blazor\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

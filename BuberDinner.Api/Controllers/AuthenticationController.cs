@@ -6,7 +6,7 @@ namespace BuberDinner.Api.Controllers
 {
     [Route("auth")]
     [ApiController]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
         private readonly IAuthenticationService _authenticationService;
 
@@ -16,11 +16,14 @@ namespace BuberDinner.Api.Controllers
         }
 
         [HttpPost("register")]
-        public ActionResult<AuthenticationResponse> Register(RegisterRequest request)
+        public IActionResult Register(RegisterRequest request)
         {
             var result = _authenticationService.Register(request.FirstName, request.LastName, request.Email, request.Password);
 
-            return Ok(MapAuthResult(result));
+            return result.Match(
+                    authResult => Ok(MapAuthResult(authResult)),
+                    Problem
+                );
         }
 
         private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
@@ -28,11 +31,14 @@ namespace BuberDinner.Api.Controllers
             return new AuthenticationResponse(authResult.User.Id, authResult.User.FirstName, authResult.User.LastName, authResult.User.Email, authResult.Token);
         }
         [HttpPost("login")]
-        public ActionResult<AuthenticationResponse> Login(LoginRequest request)
+        public IActionResult Login(LoginRequest request)
         {
 
             var result = _authenticationService.Login(request.Email, request.Password);
-            return Ok(new AuthenticationResponse(result.User.Id, result.User.FirstName, result.User.LastName, result.User.Email, result.Token));
+            return result.Match(
+                    authResult => Ok(MapAuthResult(authResult)),
+                    Problem
+                );
         }
     }
 }

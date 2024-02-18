@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BuberDinner.Api.Common.Http;
+using ErrorOr;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
@@ -45,8 +47,13 @@ namespace BuberDinner.Api.Common.Errors
                 problemDetails.Extensions["traceId"] = traceId;
             }
 
-            //Custom property added
-            problemDetails.Extensions.Add("CustomProperty", "CustomValue");
+            var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
+            if (errors is not null)
+            {
+                //Custom property added
+                problemDetails.Extensions.Add("errorCodes", errors.Select(e => e.Code));
+            }
+          
         }
 
         public override ValidationProblemDetails CreateValidationProblemDetails(HttpContext httpContext, ModelStateDictionary modelStateDictionary, int? statusCode = null, string? title = null, string? type = null, string? detail = null, string? instance = null)

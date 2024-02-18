@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "omfLFXkAvo+2/o+U+Bfvy2OLYwE9DyMo3iwqpB84AKZfPzgxxBEY3aBuEnoWE9TzF5BePCT4WPmXPGap2IOfdg==",
+  "dgSpecHash": "q1Dat5p1s9tw90NdCvBtN5Ue+iCliHnc66sILYNC4tVetAdktPzgPp7M18iqaXTe8NY5kmLs4fS0hnEZWB6qcA==",
   "success": true,
   "projectFilePath": "D:\\projects\\learn\\Blazor\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
