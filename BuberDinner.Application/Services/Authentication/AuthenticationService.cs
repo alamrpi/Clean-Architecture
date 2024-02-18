@@ -30,29 +30,6 @@ namespace BuberDinner.Application.Services.Authentication
             return new AuthenticationResult(user, token);
         }
 
-        //Using OneOf<> Library
-        //public OneOf<AuthenticationResult, IError> Register(string firstName, string lastName, string email, string password)
-        //{
-        //    if (_userRepository.GetUserByEmail(email) is not null)
-        //        //throw new DuplicateEmailException("User with given email already exists");
-        //        return new DuplicateEmailError();
-
-        //    //Create JWT token
-        //    var user = new User
-        //    {
-        //        FirstName = firstName,
-        //        LastName = lastName,
-        //        Email = email,
-        //        Password = password
-        //    };
-
-        //    _userRepository.Add(user);
-
-        //    var token = _jwtTokenGenerator.GenerateToken(user);
-
-        //    return new AuthenticationResult(user, token);
-        //}
-
         /// <summary>
         /// FluentResult error handler
         /// </summary>

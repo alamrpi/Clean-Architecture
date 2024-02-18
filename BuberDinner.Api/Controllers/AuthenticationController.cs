@@ -19,24 +19,6 @@ namespace BuberDinner.Api.Controllers
             this._authenticationService = authenticationService;
         }
 
-
-        /// <summary>
-        /// Using OneOf Library
-        /// </summary>
-        /// <param name="authResult"></param>
-        /// <returns></returns>
-        //[HttpPost("register")]
-        //public ActionResult<AuthenticationResponse> Register(RegisterRequest request)
-        //{
-        //    OneOf<AuthenticationResult, IError> result = _authenticationService.Register(request.FirstName, request.LastName, request.Email, request.Password);
-
-        //    return result.Match(
-        //        authResult => Ok(MapAuthResult(authResult)),
-        //        error => Problem(statusCode: (int)error.StatusCode, title: error.ErrorMessage)
-        //        );
-        //}
-
-
         [HttpPost("register")]
         public ActionResult<AuthenticationResponse> Register(RegisterRequest request)
         {
