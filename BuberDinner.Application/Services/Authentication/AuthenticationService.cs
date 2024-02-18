@@ -38,11 +38,10 @@ namespace BuberDinner.Application.Services.Authentication
         /// <param name="email"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        public Result<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
+        public AuthenticationResult Register(string firstName, string lastName, string email, string password)
         {
             if (_userRepository.GetUserByEmail(email) is not null)
-                //throw new DuplicateEmailException("User with given email already exists");
-                return Result.Fail<AuthenticationResult>(new[] {new DuplicateEmailError()});
+                throw new DuplicateEmailException("User with given email already exists");
 
             //Create JWT token
             var user = new User
