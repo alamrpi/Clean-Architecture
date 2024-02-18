@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vtxI41wfpJrtkUJHT9g2wFIBpdE6idQ1bbdJF5Px4/Z8LDQpWlVQBmF2O901Hq1IAZbNCB/mdGYLs+PWBmAPSQ==",
+  "dgSpecHash": "tiJgCqLsHF+Is7hQLDZjS2SbLcrVTLHKqVNcCZeZOIsc2Y5xol4kT/exdX9LomcOz0uFbpx0xK+owwa5fM0Ljw==",
   "success": true,
   "projectFilePath": "D:\\projects\\learn\\Blazor\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.15\\microsoft.aspnetcore.openapi.7.0.15.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
