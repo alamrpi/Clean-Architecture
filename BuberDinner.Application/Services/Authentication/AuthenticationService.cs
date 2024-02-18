@@ -2,7 +2,6 @@
 using BuberDinner.Application.Common.Interfaces.Authentication;
 using BuberDinner.Application.Common.Interfaces.Persistance;
 using BuberDinner.Domain.Entities;
-using FluentResults;
 using OneOf;
 
 namespace BuberDinner.Application.Services.Authentication
@@ -31,41 +30,11 @@ namespace BuberDinner.Application.Services.Authentication
         }
 
         //Using OneOf<> Library
-        //public OneOf<AuthenticationResult, IError> Register(string firstName, string lastName, string email, string password)
-        //{
-        //    if (_userRepository.GetUserByEmail(email) is not null)
-        //        //throw new DuplicateEmailException("User with given email already exists");
-        //        return new DuplicateEmailError();
-
-        //    //Create JWT token
-        //    var user = new User
-        //    {
-        //        FirstName = firstName,
-        //        LastName = lastName,
-        //        Email = email,
-        //        Password = password
-        //    };
-
-        //    _userRepository.Add(user);
-
-        //    var token = _jwtTokenGenerator.GenerateToken(user);
-
-        //    return new AuthenticationResult(user, token);
-        //}
-
-        /// <summary>
-        /// FluentResult error handler
-        /// </summary>
-        /// <param name="firstName"></param>
-        /// <param name="lastName"></param>
-        /// <param name="email"></param>
-        /// <param name="password"></param>
-        /// <returns></returns>
-        public Result<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
+        public OneOf<AuthenticationResult, IError> Register(string firstName, string lastName, string email, string password)
         {
             if (_userRepository.GetUserByEmail(email) is not null)
                 //throw new DuplicateEmailException("User with given email already exists");
-                return Result.Fail<AuthenticationResult>(new[] {new DuplicateEmailError()});
+                return new DuplicateEmailError();
 
             //Create JWT token
             var user = new User
