@@ -9,3 +9,5 @@ D:\projects\learn\Blazor\BuberDinner\BuberDinner.Domain\obj\Debug\net7.0\BuberDi
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Domain\obj\Debug\net7.0\refint\BuberDinner.Domain.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Domain\obj\Debug\net7.0\BuberDinner.Domain.pdb
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Domain\obj\Debug\net7.0\ref\BuberDinner.Domain.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Domain\obj\Debug\net7.0\BuberDinner.Domain.csproj.AssemblyReference.cache
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Domain\obj\Debug\net7.0\BuberDinner.Domain.sourcelink.json

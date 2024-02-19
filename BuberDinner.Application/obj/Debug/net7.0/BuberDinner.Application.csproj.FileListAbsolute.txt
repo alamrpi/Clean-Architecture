@@ -13,3 +13,4 @@ D:\projects\learn\Blazor\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\Bu
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\refint\BuberDinner.Application.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.pdb
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\ref\BuberDinner.Application.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.sourcelink.json

@@ -52,3 +52,9 @@ D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\OneOf.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\obj\Debug\net7.0\BuberDinner.Api.sourcelink.json
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ErrorOr.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\FluentResults.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

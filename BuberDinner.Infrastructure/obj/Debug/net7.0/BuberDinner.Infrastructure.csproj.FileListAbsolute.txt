@@ -15,3 +15,4 @@ D:\projects\learn\Blazor\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net7.0
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net7.0\refint\BuberDinner.Infrastructure.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net7.0\BuberDinner.Infrastructure.pdb
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net7.0\ref\BuberDinner.Infrastructure.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net7.0\BuberDinner.Infrastructure.sourcelink.json

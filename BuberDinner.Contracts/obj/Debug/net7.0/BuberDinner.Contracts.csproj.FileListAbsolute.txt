@@ -9,3 +9,4 @@ D:\projects\learn\Blazor\BuberDinner\BuberDinner.Contracts\obj\Debug\net7.0\Bube
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Contracts\obj\Debug\net7.0\refint\BuberDinner.Contracts.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.pdb
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Contracts\obj\Debug\net7.0\ref\BuberDinner.Contracts.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.sourcelink.json
