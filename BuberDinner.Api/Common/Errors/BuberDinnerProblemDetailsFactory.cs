@@ -58,7 +58,20 @@ namespace BuberDinner.Api.Common.Errors
 
         public override ValidationProblemDetails CreateValidationProblemDetails(HttpContext httpContext, ModelStateDictionary modelStateDictionary, int? statusCode = null, string? title = null, string? type = null, string? detail = null, string? instance = null)
         {
-            throw new NotImplementedException();
+            statusCode ??= 400;
+            title ??= "One or more validation errors occurred.";
+            var problemDetails = new ValidationProblemDetails(modelStateDictionary)
+            {
+                Title = title,
+                Type = type,
+                Detail = detail,
+                Instance = instance,
+                Status = statusCode
+            };
+
+            ApplyProblemDetailsDefaults(httpContext, problemDetails, statusCode.Value);
+
+            return problemDetails;
         }
     }
 }

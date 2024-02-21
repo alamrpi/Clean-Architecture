@@ -30,7 +30,7 @@ namespace BuberDinner.Api
                     app.UseSwaggerUI();
                 }
 
-                app.UseExceptionHandler("/error");
+                //app.UseExceptionHandler("/error");
 
                 //For custom property in problem details
                 //app.Map("/error", (HttpContext httpContext) =>
