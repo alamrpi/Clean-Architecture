@@ -15,15 +15,9 @@ namespace BuberDinner.Api
         {
             var builder = WebApplication.CreateBuilder(args);
             {
-                //builder.Services.AddControllers(opt =>
-                //{
-                //    opt.Filters.Add<ErrorHandlingFilterAttribute>();
-                //});
-                builder.Services.AddControllers();
-                builder.Services.AddSingleton<ProblemDetailsFactory, BuberDinnerProblemDetailsFactory>();
-                builder.Services.AddEndpointsApiExplorer();
-                builder.Services.AddSwaggerGen();
+                
                 builder.Services
+                    .AddPresentation()
                     .AddApplication()
                     .AddInfrastructure(builder.Configuration);
             }

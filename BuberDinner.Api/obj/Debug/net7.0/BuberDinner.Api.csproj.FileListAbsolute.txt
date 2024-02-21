@@ -58,3 +58,6 @@ D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\FluentResu
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Contracts.dll
 D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Mapster.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Mapster.Core.dll
+D:\projects\learn\Blazor\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll
