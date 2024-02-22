@@ -41,7 +41,8 @@ namespace BuberDinner.Api
                 //app.UseMiddleware<ErrorHandlingMiddleware>();
                 app.UseHttpsRedirection();
 
-                //app.UseAuthorization();
+                app.UseAuthentication();
+                app.UseAuthorization();
 
                 app.MapControllers();
 
