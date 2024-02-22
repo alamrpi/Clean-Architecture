@@ -21,4 +21,8 @@
     <ProjectReference Include="..\BuberDinner.Domain\BuberDinner.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Menus\Query\" />
+  </ItemGroup>
+
 </Project>

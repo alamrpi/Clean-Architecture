@@ -17,10 +17,24 @@ namespace BuberDinner.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, ConfigurationManager configuration)
         {
-            services.AddAuth(configuration);
-            services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            services
+                .AddAuth(configuration)
+                .AddPersistance();
 
+            services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        
+            return services;
+        }
+
+        /// <summary>
+        /// All persistance register
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddPersistance(this IServiceCollection services)
+        {
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IMenuRepository, MenuRepository>();
             return services;
         }
 
