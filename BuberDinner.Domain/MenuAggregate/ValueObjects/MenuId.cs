@@ -10,11 +10,17 @@ namespace BuberDinner.Domain.Menu.ValueObjects
             Value = value;
         }
 
-        public static MenuId CreateUnique() => new MenuId(Guid.NewGuid());
+        public static MenuId CreateUnique() => new(Guid.NewGuid());
+
+        public static MenuId Create(Guid value) => new(value);
 
         public override IEnumerable<object> GetEqualityComponents()
         {
            yield return Value;
+        }
+        public MenuId()
+        {
+            
         }
     }
 }

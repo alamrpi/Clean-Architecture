@@ -14,6 +14,10 @@ namespace BuberDinner.Domain.Host.ValueObjects
         {
             return new(Guid.Parse(value));
         }
+        public static HostId Create(Guid value)
+        {
+            return new(value);
+        }
         public static HostId CreateUnique() => new(Guid.NewGuid());
 
         public override IEnumerable<object> GetEqualityComponents()

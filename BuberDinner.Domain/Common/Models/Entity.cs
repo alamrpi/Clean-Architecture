@@ -7,6 +7,10 @@
         { 
             Id = id;
         }
+        public Entity()
+        {
+            
+        }
 
         public override bool Equals(object? obj)
         {

@@ -16,5 +16,9 @@ namespace BuberDinner.Domain.Host.ValueObjects
         {
             yield return Value;
         }
+        public DinnerId()
+        {
+            
+        }
     }
 }

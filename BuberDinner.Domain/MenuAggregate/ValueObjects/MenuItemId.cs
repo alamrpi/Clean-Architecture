@@ -16,5 +16,11 @@ namespace BuberDinner.Domain.Menu.ValueObjects
         {
            yield return Value;
         }
+
+        public static MenuItemId Create(Guid value) => new MenuItemId(value);
+        public MenuItemId()
+        {
+            
+        }
     }
 }

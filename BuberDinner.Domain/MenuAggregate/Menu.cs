@@ -9,23 +9,24 @@ namespace BuberDinner.Domain.Menu
 {
     public sealed class Menu : AggregateRoot<MenuId>
     {
-        private readonly List<MenuSection> _menuSections = new();
+      
         private readonly List<DinnerId> _dinnerIds = new();
         private readonly List<MenuReviewId> _menuReviewIds = new();
 
-        public string Name { get; }
-        public string Description { get; }
-        public AverageRating AverageRating { get; }
+        public string Name { get; private set; }
 
-        public IReadOnlyList<MenuSection> Sections => _menuSections.AsReadOnly();
+        public string Description { get; private set; }
+        public AverageRating AverageRating { get; private set; }
 
-        public HostId HostId { get; set; }
+        public List<MenuSection> Sections { get; set; }
+
+        public HostId HostId { get; private set; }
 
         public IReadOnlyList<DinnerId> DinnerIds => _dinnerIds.AsReadOnly();
         public IReadOnlyList<MenuReviewId> MenuReviewIds => _menuReviewIds.AsReadOnly();
 
-        public DateTime CreatedDateTime { get; }
-        public DateTime UpdatedDateTime { get; }
+        public DateTime CreatedDateTime { get; private set; }
+        public DateTime UpdatedDateTime { get; private set; }
         public Menu(MenuId id, HostId hostId, string name, string description, AverageRating averageRating, List<MenuSection>? sections) : base(id)
         {
             Name = name;
@@ -34,8 +35,12 @@ namespace BuberDinner.Domain.Menu
             CreatedDateTime = DateTime.UtcNow;
             UpdatedDateTime = DateTime.UtcNow;
             AverageRating = averageRating;
-            _menuSections = sections ?? new();
+            Sections = sections ?? new();
 
+        }
+        public Menu()
+        {
+            
         }
 
         public static Menu Create(HostId hostId, string name, string description, List<MenuSection>? sections)

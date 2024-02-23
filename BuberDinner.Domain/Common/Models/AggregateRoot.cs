@@ -11,5 +11,9 @@ namespace BuberDinner.Domain.Common.Models
         protected AggregateRoot(TId id) : base(id)
         {
         }
+        public AggregateRoot()
+        {
+            
+        }
     }
 }
